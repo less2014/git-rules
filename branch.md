@@ -1,3 +1,5 @@
+Замени содержимое branch.md на следующее:
+
 ## S3. Манипуляции через ссылки, нет ссылки — в мусор
 #### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся ссылка
 #### checkout — перемещение на ветку или коммит, reset — перемещение с веткой на коммит
@@ -12,4 +14,6 @@
 - `git checkout <branch>` — переместить HEAD на ветку
 - `git checkout -b <new_branch>` — создать новую ветку и перейти на нее
 - `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
-### Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- `git reflog show <ref>` — показать лог действий со ссылкой
+- `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
+- `git gc` — удалить ненужные файлы и оптимизировать локальный репозиторий
